@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*general*/
+
+    body {
+        font-size: 2rem;
+        background-color: #141313;
+        color: blanchedalmond;
+    }
+    #botonera{
+        background-color: #080808;   
+    }
+        #botonera .titulo{
+            color: rgb(134, 145, 145);
+            text-align: center;
+        }
+        
+        #botonera ul li a{
+            color: #d7e4d8;
+            font-size: 1.1em;
+            
+            /*Subrayado animado*/
+            background-image: linear-gradient(currentcolor, currentcolor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+        }
+        #botonera ul li a:hover{
+            color: rgb(179, 81, 154);
+            font-weight: 600;
+            /*subrayado animado*/
+            background-size: 100% 2px;
+        }
+        #botonera img {
+            width: 100px;
+        }  
+
+    .destino {
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        color: rgb(105, 0, 0);
+    }
+    .contenedor {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor img {
+        width: 95%;   
+    }
+    .contenedor_2 {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        font-size: medium;
+        width: 100%;
+        flex-direction: row;
+    }
+    .sale_2, .sale_3, .sale_4, .sale_5 {
+        width: 25%;
+        height: 10rem;
+        background-position: center;
+        border-radius: 10px;
+        text-align: center;
+        margin: 5px;
+    }
+    .precio {
+        -webkit-text-stroke: 1px black;
+        color: white;
+    }
+    .sale_2 {
+        background-image: url(../img/bariloche.jpeg); 
+        background-size: 100%;
+    }
+    .sale_3 {
+        background-image: url(../img/jeri.jpg);
+        background-size: 100%;
+    }
+    .sale_4 {
+        background-image: url(../img/flori.png);
+        background-size: 100%;
+    }
+    .sale_5 {
+        background-image: url(../img/mendoza.jpg);
+        background-size: 100%;
+    }
+    .contenedor_3 {
+        text-align: center;
+        padding: 1rem;
+        font-size: medium;
+    }
+    footer {
+        background-color: #070707;
+        padding: 1rem;   
+        height: 20px;
+    }
+    .net {
+        width: 50%;
+        float: left;
+    }
+    footer img {
+        width: 1.5rem;
+    }
+    .by {
+        font-size: small;
+        float: right;
+        color: #4e4a4a;
+        text-align: right;
+    }
+
+
+/*formulario*/
+.input_data {
+    width: 80%;
+    display: block;
+    margin: 0.7rem;
+    padding: 1rem;
+    
+}
+.input_text {
+    padding: 1rem;
+    width: 80%;
+    margin: 0.7rem;
+}
+.send {
+    width: 35%;
+    padding: 1rem;
+    margin: 0.7rem;
+}
+
+
+/*Nosotros*/
+.us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*-------Fotos-------*/
+.galeria_contenedor{
+    padding: 1rem;
+}
+.img_small{
+    width: 10rem;
+    padding: 1rem;
+}
+/*-------Fotos-------*/
+.videos{
+    background-color: #252323;
+    display: flex;
+    flex-direction: column;
+    text-decoration: double;
+    align-items: center;
+
+
+}
+
+/*mobile*/
+@media(max-width:768px) {
+    body {
+        font-size: 1rem;
+        background-color: #141313;
+        color: blanchedalmond;
+    }
+
+    #botonera .navbar-brand{
+        display: none;
+        font-size: medium;
+    }
+    .destino {
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        color: rgb(105, 0, 0);
+    }
+    .contenedor {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor img {
+        width: 95%;   
+    }
+    .contenedor_2 {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sale_2, .sale_3, .sale_4, .sale_5 {
+        width: 95%;
+        height: 10rem;
+        background-position: center;
+        border-radius: 10px;
+        text-align: center;
+        margin: 5px;
+    }
+    .precio {
+        -webkit-text-stroke: 1px black;
+        color: white;
+    }
+    .sale_2 {
+        background-image: url(../img/bariloche.jpeg); 
+        background-size: 100%;
+    }
+    .sale_3 {
+        background-image: url(../img/jeri.jpg);
+        background-size: 100%;
+    }
+    .sale_4 {
+        background-image: url(../img/flori.png);
+        background-size: 100%;
+    }
+    .sale_5 {
+        background-image: url(../img/mendoza.jpg);
+        background-size: 100%;
+    }
+    .contenedor_3 {
+        text-align: center;
+        padding: 1rem;
+        font-size: medium;
+    }
+    footer {
+        background-color: #070707;
+        padding: 1rem;   
+        height: 20px;
+    }
+    .net {
+        width: 50%;
+        float: left;
+    }
+    footer img {
+        width: 1.5rem;
+    }
+    .by {
+        font-size: small;
+        float: right;
+        color: #4e4a4a;
+        text-align: right;
+    }
+}
